@@ -1,0 +1,62 @@
+.addButton,
+.addTaskButton {
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #450047;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.addButton:hover,
+.addTaskButton:hover {
+    transition: 0.3s;
+    background-color: #67006d;
+}
+
+.closeButton {
+    transition: 0.3s;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #5a5a5a;
+    margin-left: 10px;
+}
+
+.closeButton:hover {
+    transition: 0.3s;
+    color: #9e0000;
+}
+
+.taskCheckbox {
+    transition: 0.3s;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: 2px solid #450047;
+    background: rgb(29, 29, 29);
+    position: relative;
+}
+
+.taskCheckbox:checked {
+    transition: 0.3s;
+    border: 2px solid #68006b;
+    background: rgb(29, 29, 29);
+}
+
+.taskCheckbox:checked::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    border: solid #00e800;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}

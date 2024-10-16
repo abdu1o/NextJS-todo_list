@@ -1,0 +1,38 @@
+.inputRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskRow {
+  display: flex;
+  margin-top: 10px;
+}
+
+.inputField,
+.taskInputField,
+.changebleTaskField {
+  transition: 0.3s;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 2.5px solid #450047;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.inputField:focus,
+.taskInputField:focus,
+.changebleTaskField:focus {
+  transition: 0.3s;
+  border: 2px solid #88008f;
+  box-shadow: 15px #f200ff8e;
+}
+
+.changebleTaskField {
+  width: 250px;
+  margin-left: 20px;
+}
